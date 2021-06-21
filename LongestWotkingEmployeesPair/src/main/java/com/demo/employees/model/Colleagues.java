@@ -13,13 +13,13 @@ public class Colleagues {
 		this.projectId = projectId;
 		this.days = days;
 	}
-	
+
 	public Colleagues(int empId1, int empId2, Long days) {
 		this.empId1 = empId1;
 		this.empId2 = empId2;
 		this.days = days;
 	}
-	
+
 	public Colleagues(int empId1, int empId2) {
 		this.empId1 = empId1;
 		this.empId2 = empId2;

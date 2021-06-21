@@ -26,7 +26,7 @@ public class CalculatorImpl implements Calculator {
 	private List<Colleagues> colleaguesList = new ArrayList<>();
 
 	@Override
-	public void calculateLongestWorkingTeam(Data[] data) {
+	public void calculateColleaguesPairs(Data[] data) {
 		for (int i = 0; i < data.length - 1; i++) {
 			for (int j = i + 1; j < data.length; j++) {
 				if ((data[i].getEmployeeID() != data[j].getEmployeeID())
@@ -72,6 +72,8 @@ public class CalculatorImpl implements Calculator {
 		Colleagues longestWorkingTeam = multipleFieldsMap.entrySet().stream().max(Map.Entry.comparingByValue()).get()
 				.getKey();
 		Long days = multipleFieldsMap.get(longestWorkingTeam);
+		LOGGER.info("Employee {} and Employee {} worked longest for {} days", longestWorkingTeam.getEmpId1(),
+				longestWorkingTeam.getEmpId2(), days);
 		return new Colleagues(longestWorkingTeam.getEmpId1(), longestWorkingTeam.getEmpId2(), days);
 	}
 

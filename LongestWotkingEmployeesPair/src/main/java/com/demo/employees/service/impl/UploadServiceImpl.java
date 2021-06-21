@@ -13,7 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 import com.demo.employees.service.UploadService;
 
 @Service
-public class UploadServiceImpl implements UploadService{
+public class UploadServiceImpl implements UploadService {
 
 	@Override
 	public String uploadFile(MultipartFile file, String UPLOAD_DIR) {

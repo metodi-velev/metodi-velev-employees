@@ -41,7 +41,7 @@ public class FileReaderImpl implements FileReader {
 					throw new RuntimeException(a[2] + " must be before " + dateTo.toString());
 				return new Data(Integer.parseInt(a[0]), Integer.parseInt(a[1]), LocalDate.parse(a[2]), dateTo);
 			}).toArray(size -> new Data[size]);
-			calculator.calculateLongestWorkingTeam(data);
+			calculator.calculateColleaguesPairs(data);
 		} catch (IOException e) {
 			LOGGER.error("IOException", e);
 		}
