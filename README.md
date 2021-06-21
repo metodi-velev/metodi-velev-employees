@@ -33,5 +33,5 @@ EmpID, ProjectID, DateFrom, DateTo
 200, 15, 2015-01-03, NULL
 <br><br>
 - NULL value stands for the date today. Longest working pair in "employees-projects.txt" is the eployees pair with (empId1, empId2) = (100, 200). They have worked on projects with project id 15 for 2361 days, with project id 10 for 366 days and with project id 12 for 365 days with the overall time period of 2361 + 366 + 365 = 3092 days.
-- The UI is built using Thymeleaf. From the UI the user can select a custom text file, which is then upooaded in the "src/main/resources" directory of the application. The working pairs are calculated after the upload and then displayed with their time longevity as the case is with "employees-projects.txt". 
+- The UI is built using Thymeleaf. From the UI the user can select a custom text file, which is then uploaded in the "src/main/resources" directory of the application. The working pairs are calculated after the upload and then displayed with their time longevity as the case is with "employees-projects.txt". 
 - The application is packaged as a jar file and is started as every other jar-archived Spring Boot application can be started with right click on the project and selecting run as java application or for example from the command prompth with maven by running the command <i>mvn spring-boot:run</i> from the root directory of the application.
